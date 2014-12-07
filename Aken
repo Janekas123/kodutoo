@@ -1,0 +1,47 @@
+package m2ng;
+
+import java.awt.Color;
+import javax.swing.*;
+
+/**
+ * Teeb akna ja m22rab selle omadused.
+ * 
+ * @author Diana
+ */
+
+// Tekitan akna
+public class Aken extends JFrame {
+	
+	public static void main(String[] args) throws InterruptedException{
+		//
+		SwingUtilities.invokeLater(new Runnable() {
+			@Override
+			public void run() {
+				new Aken();
+					
+			}
+		});
+
+	
+
+	}
+	
+	
+	Aken() {
+		
+		
+		// Siia tuleb mängu nimi
+		this.setTitle("Siia tuleb mängu nimi");
+		this.setSize(800, 600);//Akna suurus
+		this.setResizable(true);//kasutaja saab akna suurust muuta
+	    this.setLocationRelativeTo(null);//paigutan akna ekraani keskele
+		// Sulgeb akna, kui kasutaja vajutab ristist kinni
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(true);// aken  nähtavaks
+		this.setBackground(Color.RED);//Akna taustavärv
+		 
+	}
+	
+	
+	
+}
